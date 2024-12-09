@@ -114,6 +114,28 @@
 					hex: false,
 				},
 			],
+			name: '蓝牙模块AT指令',
+			list: [
+    {"name":"进入 AT 指令模式","content":"+++","hex":false},
+    {"name":"扫描设备","content":"AT+SCAN\\r\\n","hex":false},
+    {"name":"连接0号设备","content":"AT+CONNECT=0\\r\\n","hex":false},
+    {"name":"连接1号设备","content":"AT+CONNECT=1\\r\\n","hex":false},
+    {"name":"连接指定 MAC 地址设备","content":"AT+CONNECT=\\u000260:55:F9:7C:44:9E\\r\\n","hex":false},
+    {"name":"查询 MAC 地址","content":"AT+MAC?\\r\\n","hex":false},
+    {"name":"查询设备名称","content":"AT+NAME?\\r\\n","hex":false},
+    {"name":"设置蓝牙名称","content":"AT+NAME=0\\u0002BLE-TEST\\r\\n","hex":false},
+    {"name":"查询工作模式","content":"AT+ROLE?\\r\\n","hex":false},
+    {"name":"设置主从一体模式","content":"AT+ROLE=2\\r\\n","hex":false},
+    {"name":"查询已连接设备列表","content":"AT+CNT_LIST\\r\\n","hex":false},
+    {"name":"断开连接","content":"AT+DISCONNECT\\r\\n","hex":false},
+    {"name":"查询自动连接状态","content":"AT+AUTO_CNT?\\r\\n","hex":false},
+    {"name":"删除所有自动重连设备","content":"AT+DEV_DEL=ALL\\r\\n","hex":false},
+    {"name":"退出 AT 模式","content":"AT+EXIT\\r\\n","hex":false},
+    {"name":"重置设备","content":"AT+RESET\\r\\n","hex":false},
+    {"name":"重启设备","content":"AT+RESTART\\r\\n","hex":false},
+    {"name":"查询版本信息","content":"AT+VERSION\\r\\n","hex":false}
+]，
+
 		},
 	]
 	let worker = null
